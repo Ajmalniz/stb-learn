@@ -1,0 +1,6 @@
+# Text planning files
+prompt.txt
+detailed_prompt.txt
+
+# Local editor settings
+.claude/

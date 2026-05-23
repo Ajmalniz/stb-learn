@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STB Learn — Class 9 & 10 Learning Platform</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .course-card { animation: fadeInUp .35s ease both; }
+    .course-card:nth-child(1)  { animation-delay: .05s; }
+    .course-card:nth-child(2)  { animation-delay: .10s; }
+    .course-card:nth-child(3)  { animation-delay: .15s; }
+    .course-card:nth-child(4)  { animation-delay: .20s; }
+    .course-card:nth-child(5)  { animation-delay: .25s; }
+    .course-card:nth-child(6)  { animation-delay: .30s; }
+    .course-card:nth-child(7)  { animation-delay: .35s; }
+    .course-card:nth-child(8)  { animation-delay: .40s; }
+    .course-card:nth-child(9)  { animation-delay: .45s; }
+    .course-card:nth-child(10) { animation-delay: .50s; }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ──────────────────────────────────────────── -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-icon">📚</div>
+      STB Learn
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#courses" class="active">Courses</a></li>
+      <li><a href="#why">Why STB Learn</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#courses" class="nav-cta">Start Learning</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">Sindh Textbook Board · Class 9 & 10</span>
+    <h1>Learn Every Subject<br>From Zero to Confident</h1>
+    <p>Complete curriculum for Class 9 and 10 — Biology, Chemistry, Physics, Mathematics, and English — explained simply for beginners.</p>
+    <div class="hero-actions">
+      <a href="#courses" class="btn btn-white">Browse Courses</a>
+      <a href="courses/biology/class9/index.html" class="btn btn-outline">Start with Biology 9</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number" data-count="10" data-suffix="">0</div>
+        <div class="stat-label">Courses</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-count="109" data-suffix="">0</div>
+        <div class="stat-label">Chapters</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-count="5" data-suffix="">0</div>
+        <div class="stat-label">Subjects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-count="100" data-suffix="%">0%</div>
+        <div class="stat-label">Free Access</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COURSES ──────────────────────────────────────────── -->
+<section class="section" id="courses">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-label">Full Curriculum</p>
+      <h2 class="section-title">Choose Your Course</h2>
+      <p class="section-subtitle">10 courses covering every subject in the STB Class 9 & 10 syllabus</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All (10)</button>
+      <button class="filter-tab" data-filter="biology">Biology</button>
+      <button class="filter-tab" data-filter="chemistry">Chemistry</button>
+      <button class="filter-tab" data-filter="physics">Physics</button>
+      <button class="filter-tab" data-filter="math">Mathematics</button>
+      <button class="filter-tab" data-filter="english">English</button>
+    </div>
+
+    <div class="courses-grid">
+
+      <!-- Biology Class 9 -->
+      <a href="courses/biology/class9/index.html" class="course-card bio" data-subject="biology" data-course="bio9" data-chapters="9">
+        <div class="course-card-header">
+          <div class="course-icon">🧬</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">Biology</div>
+            <h3>Biology — Class 9</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          From cells to nutrition — master the foundation of life sciences. Perfect for absolute beginners.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 9 Chapters</span>
+            <span class="meta-pill">🎯 Beginner</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- Biology Class 10 -->
+      <a href="courses/biology/class10/index.html" class="course-card bio" data-subject="biology" data-course="bio10" data-chapters="9">
+        <div class="course-card-header">
+          <div class="course-icon">🌿</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">Biology</div>
+            <h3>Biology — Class 10</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Gaseous exchange, reproduction, genetics and biotechnology — the next level of biology.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 9 Chapters</span>
+            <span class="meta-pill">🎯 Intermediate</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- Chemistry Class 9 -->
+      <a href="courses/chemistry/class9/index.html" class="course-card chem" data-subject="chemistry" data-course="chem9" data-chapters="8">
+        <div class="course-card-header">
+          <div class="course-icon">⚗️</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">Chemistry</div>
+            <h3>Chemistry — Class 9</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Atoms, molecules, periodic table and chemical reactions — chemistry made easy from the start.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 8 Chapters</span>
+            <span class="meta-pill">🎯 Beginner</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- Chemistry Class 10 -->
+      <a href="courses/chemistry/class10/index.html" class="course-card chem" data-subject="chemistry" data-course="chem10" data-chapters="9">
+        <div class="course-card-header">
+          <div class="course-icon">🧪</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">Chemistry</div>
+            <h3>Chemistry — Class 10</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Equilibrium, organic chemistry, hydrocarbons and industrial chemistry in depth.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 9 Chapters</span>
+            <span class="meta-pill">🎯 Intermediate</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- Physics Class 9 -->
+      <a href="courses/physics/class9/index.html" class="course-card phys" data-subject="physics" data-course="phys9" data-chapters="9">
+        <div class="course-card-header">
+          <div class="course-icon">⚡</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">Physics</div>
+            <h3>Physics — Class 9</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Motion, forces, gravitation and energy — understand how the physical world works.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 9 Chapters</span>
+            <span class="meta-pill">🎯 Beginner</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- Physics Class 10 -->
+      <a href="courses/physics/class10/index.html" class="course-card phys" data-subject="physics" data-course="phys10" data-chapters="9">
+        <div class="course-card-header">
+          <div class="course-icon">🔭</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">Physics</div>
+            <h3>Physics — Class 10</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Waves, optics, electricity, electronics and nuclear physics — advanced concepts simplified.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 9 Chapters</span>
+            <span class="meta-pill">🎯 Intermediate</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- Mathematics Class 9 -->
+      <a href="courses/math/class9/index.html" class="course-card math" data-subject="math" data-course="math9" data-chapters="17">
+        <div class="course-card-header">
+          <div class="course-icon">📐</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">Mathematics</div>
+            <h3>Mathematics — Class 9</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Algebra, geometry, logarithms and matrices — build a rock-solid math foundation step by step.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 17 Chapters</span>
+            <span class="meta-pill">🎯 Beginner</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- Mathematics Class 10 -->
+      <a href="courses/math/class10/index.html" class="course-card math" data-subject="math" data-course="math10" data-chapters="13">
+        <div class="course-card-header">
+          <div class="course-icon">📊</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">Mathematics</div>
+            <h3>Mathematics — Class 10</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Quadratic equations, trigonometry, statistics and circle theorems — preparing for exams.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 13 Chapters</span>
+            <span class="meta-pill">🎯 Intermediate</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- English Class 9 -->
+      <a href="courses/english/class9/index.html" class="course-card eng" data-subject="english" data-course="eng9" data-chapters="6">
+        <div class="course-card-header">
+          <div class="course-icon">✏️</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">English</div>
+            <h3>English — Class 9</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Grammar, reading, writing and vocabulary — become confident in English from scratch.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 6 Units</span>
+            <span class="meta-pill">🎯 Beginner</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+      <!-- English Class 10 -->
+      <a href="courses/english/class10/index.html" class="course-card eng" data-subject="english" data-course="eng10" data-chapters="6">
+        <div class="course-card-header">
+          <div class="course-icon">📝</div>
+          <div class="course-card-meta">
+            <div class="course-subject-tag">English</div>
+            <h3>English — Class 10</h3>
+          </div>
+        </div>
+        <div class="course-card-body">
+          Advanced grammar, essay writing, literature and comprehension — master English for exams.
+        </div>
+        <div class="course-progress-bar"><div class="course-progress-fill" style="width:0%"></div></div>
+        <div class="course-card-footer">
+          <div class="course-meta-info">
+            <span class="meta-pill">📖 6 Units</span>
+            <span class="meta-pill">🎯 Intermediate</span>
+          </div>
+          <span class="course-btn">Start →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY SECTION ──────────────────────────────────────── -->
+<section class="section" id="why" style="background:var(--surface); border-top:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-label">Why choose us</p>
+      <h2 class="section-title">Designed for Every Student</h2>
+      <p class="section-subtitle">Whether you are starting from zero or reviewing for exams, STB Learn has you covered.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <h3>Beginner Friendly</h3>
+        <p>Every chapter starts from the very basics. No prior knowledge needed — we explain everything step by step.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📚</div>
+        <h3>STB Curriculum</h3>
+        <p>Follows the exact Sindh Textbook Board syllabus for Class 9 and 10 — everything you need for your exams.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🧠</div>
+        <h3>Interactive Quizzes</h3>
+        <p>Test your understanding after every chapter with multiple-choice quizzes and instant feedback.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📈</div>
+        <h3>Track Progress</h3>
+        <p>Your progress is saved automatically. Come back any time and pick up right where you left off.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📱</div>
+        <h3>Works on Mobile</h3>
+        <p>Study on your phone, tablet, or computer — the website adapts to any screen size.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🆓</div>
+        <h3>100% Free</h3>
+        <p>No login. No payment. No ads. Open access to every course and chapter for all students.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">📚 STB Learn</div>
+    <p>Free learning platform for Class 9 & 10 students following the Sindh Textbook Board curriculum.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#why">About</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 STB Learn — Made with ❤️ for students of Sindh
+    </div>
+  </div>
+</footer>
+
+<script src="js/progress.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
